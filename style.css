@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    margin: 3rem 0;
+    width: 65%;
+    height: 35rem;
+    background: linear-gradient(45deg, #fff 0%, var(--color-primary) 60%);
+
+    animation: animateGradient 3s ease infinite alternate;
+}
+
+@keyframes animateGradient {
+    from {
+        background: linear-gradient(45deg, #fff 0%, var(--color-primary) 60%);
+    }
+
+    to {
+        --color-primary: purple;
+        background: linear-gradient(45deg, #fff 0%, var(--color-primary) 60%);
+    }
+}
